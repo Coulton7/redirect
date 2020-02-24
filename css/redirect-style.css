@@ -71,6 +71,15 @@ p a[target="_blank"]:after {
   margin-bottom: -8%;
 }
 
+.front .navbar-nav>li>a.btn-disabled:hover {
+    border-top: 4px solid #ffffff;
+    cursor: default;
+}
+
+.front .navbar-default .navbar-nav>li>a{
+  color: #ffffff;
+}
+
 .maintenance-page .flexslider .slides li img{
   margin-top: -8%;
   margin-bottom: -8%;
