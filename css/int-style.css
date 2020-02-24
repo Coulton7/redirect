@@ -369,15 +369,6 @@ p a[target="_blank"]:after {
   display: none;
 }
 
-.iceberg-testhouse {
-  background-image: url(/sites/all/themes/aesinternational/images/photos/iceberg-testhouse.jpg);
-  background-position: 60% 50%;
-}
-
-.iceberg-workshop {
-  background-image: url(/sites/all/themes/aesinternational/images/photos/iceberg-workshop.jpg);
-}
-
 .iceberg-contact {
   margin-top: -2.25em;
 }
