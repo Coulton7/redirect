@@ -86,7 +86,7 @@
 				 <img class= "uppercurve" src="/sites/all/themes/aesbs337/images/logos/wave-upper.svg" alt ="uppercurve"></img>
 				 <?php if ($logo): ?>
 					 <div class="logo navbar-btn pull-left" title="<?php print t('Home'); ?>">
-						 <img src="/sites/all/themes/aesbs337/images/logos/textonlylogo.svg" alt="<?php print t('Home'); ?> " class="textlogo img-adaptive" alt="image responsive"/>
+						 <img src="/sites/all/themes/aesbs337/images/logos/textonlylogo.svg" alt="<?php print t('Home'); ?> " class="textlogo img-adaptive" alt="textlogo"/>
 					 </div>
 				 <?php endif; ?>
 			 </div>
@@ -152,8 +152,6 @@
 					</div>
 				</div>
 			 </div>
-		 </div>
-	 </div>
 
 			<div class="row wavelower row-eq-height">
   			<div class="col-sm-9 col-xs-0 fullscreen">
@@ -176,6 +174,8 @@
          </div>
   			</div>
   		</div>
+	</div>
+</div>
 
 <div class="main-container <?php print $container_class; ?>">
   <div class="container-fluid">
