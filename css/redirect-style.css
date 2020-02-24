@@ -66,6 +66,11 @@ p a[target="_blank"]:after {
   left: 16.6667%;
 }
 
+.front .flexslider .slides li img{
+  margin-top: -8%;
+  margin-bottom: -8%;
+}
+
 .maintenance-page .flexslider .slides li img{
   margin-top: -8%;
   margin-bottom: -8%;
