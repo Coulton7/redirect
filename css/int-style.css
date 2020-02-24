@@ -39,25 +39,31 @@ p a[target="_blank"]:after {
 }
 
 .front .flex-header {
-  padding-left: 0.4em;
-  color: #dd1e25;
+  color: #ffffff;
   position: relative;
   bottom: unset;
-  text-align: left;
+  text-align: center;
 }
 
 .front .flex-caption {
-  padding-left: 1em;
-  color: #ffffff;
+  margin-top: 0.2em;
+  position: relative;
   bottom: unset;
   width: auto;
-  position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .front .flexslider .slides li img {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.front .caption-container{
+  height: 100%;
+  width: 56%;
+  position: absolute;
+  top: 0;
+  left: 16.6667%;
 }
 
 .maintenance-page .flexslider .slides li img{
@@ -160,22 +166,6 @@ p a[target="_blank"]:after {
   float: left;
 }
 
-.view-id-key_branches {
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  margin-bottom: 3em;
-}
-
-.view-key-branches .view-content .views-row-odd {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.view-key-branches .view-content .views-row-even {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
 .view-global-branches-block .view-content .views-row-odd {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -233,7 +223,6 @@ p a[target="_blank"]:after {
   width: 100%;
   background-color: #f5fbfe;
 }
-
 
 .africa-upper {
   position: absolute;
@@ -368,6 +357,16 @@ p a[target="_blank"]:after {
 .entity.entity-entityform-type h2 {
   display: none;
 }
+
+.iceberg-testhouse {
+  background-image: url(/sites/all/themes/aesinternational/images/photos/iceberg-testhouse.jpg);
+  background-position: 60% 50%;
+}
+
+.iceberg-workshop {
+  background-image: url(/sites/all/themes/aesinternational/images/photos/iceberg-workshop.jpg);
+}
+
 
 .iceberg-contact {
   margin-top: -2.25em;
@@ -1247,8 +1246,9 @@ height: 3.8em;
   }
 
   .front .caption-container {
-    top: 23%;
-  }
+    top: 0;
+    width: 56%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1261,7 +1261,8 @@ height: 3.8em;
   }
 
   .front .caption-container {
-    top: 28%;
+    top: 0;
+    width: 56%;
   }
 
   .maintenance-page .caption-container{
