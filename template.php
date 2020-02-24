@@ -23,7 +23,7 @@ function redirect_css_alter(&$css){
   $css['sites/all/themes/aesbs337/css/regions-style.css']['weight']=14;
   $css['sites/all/themes/aesbs337/css/block-style.css']['weight']=15;
   $css['sites/all/themes/aesbs337/css/field-style.css']['weight']=16;
-  $css['sites/all/themes/redirect/css/int-style.css']['weight']=187;
+  $css['sites/all/themes/redirect/css/redirect-style.css']['weight']=187;
 }
 
 function redirect_theme(){

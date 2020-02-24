@@ -33,4 +33,4 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/int-style.css
+stylesheets[all][] = css/redirect-style.css
