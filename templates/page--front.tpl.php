@@ -77,103 +77,106 @@
 <script src="/sites/all/themes/aesbs337/js/maintenance-counter.js"></script>
 
 <div class="container-fluid bannercontainer">
-	 <div class="row bannerimage">
-		 <div class="row waveupper row-eq-height">
-			 <div class="col-sm-2 col-xs-2 fullscreen">
-				 <div class="wavelogo">
-					 <img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/logo.svg" alt ="logo"></img>
-				 </div>
-				 <img class= "uppercurve" src="/sites/all/themes/aesbs337/images/logos/wave-upper.svg" alt ="uppercurve"></img>
+	<div class="row bannerimage">
+		<div class="row waveupper row-eq-height">
+			<div class="col-sm-2 col-xs-2 fullscreen">
+				<div class="wavelogo">
+					<img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/logo.svg" alt ="logo"></img>
+				</div>
+				<img class= "uppercurve" src="/sites/all/themes/aesbs337/images/logos/wave-upper.svg" alt ="uppercurve"></img>
 				 <?php if ($logo): ?>
-					 <div class="logo navbar-btn pull-left" title="<?php print t('Home'); ?>">
-						 <img src="/sites/all/themes/aesbs337/images/logos/textonlylogo.svg" alt="<?php print t('Home'); ?> " class="textlogo img-adaptive" alt="textlogo"/>
-					 </div>
+					<div class="logo navbar-btn pull-left" title="<?php print t('Home'); ?>">
+						<img src="/sites/all/themes/aesbs337/images/logos/textonlylogo.svg" alt="<?php print t('Home'); ?> " class="textlogo img-adaptive" alt="textlogo"/>
+					</div>
 				 <?php endif; ?>
-			 </div>
+			</div>
 
-			 <div class="col-sm-10 col-xs-10 fullscreen">
-				 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-
-					 <div class="<?php print $container_class; ?>">
-						 <div class="navbar-header">
-						 </div>
-					 </div>
-
-					 <div class="navbar-collapse">
-						 <div class="container-fluid navbar-container">
-							 <nav role="navigation">
-								 <ul class="menu nav navbar-nav">
-									 <li class="first leaf">
-										 <a class="btn-disabled disabled" href="#">&nbsp;</a>
-									 </li>
-								 </nav>
-							 </div>
-						 </div>
-						 <div class="section-shadow-menu"></div>
-					 </header>
-
-					 <div id="name-and-slogan">
-						 <?php if (!empty($site_name)): ?>
-							 <h1 id="site-name">
-								 <div title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></div>
-							 </h1>
-						 <?php endif; ?>
-
-						 <?php if (!empty($site_slogan)): ?>
-							 <div id="site-slogan"><?php print $site_slogan; ?></div>
-						 <?php endif; ?>
-					 </div>
-				 </div>
-			 </div>
-
-			 <?php if (!empty($header)): ?>
-				 <div id="header-region">
-					 <?php print $header; ?>
-				 </div>
-			 <?php endif; ?>
-
-			 <div class="preface">
-				<div class= "flex_gradient front__flex-margin">
-					<div class="flex-container">
-						<div class="flexslider">
-							<ul class="slides">
-								<li><img class="img-responsive" src="/files/fields/field_flex_image/seal-watermark-product.png">
-									<div class="caption-container flex-item-caption">
-										<div class="flex-header">
-											<p>Redirecting.. <span id="counter">3</span></p>
-										</div>
-										<div class="flex-caption">
-											<p><span id="replace">You will now be redirected if your browser will allow it</span> <br /> <a class="display-none white-text" id="ext-link" href="https://www.aesseal.com/en" rel="nofollow">https://www.aesseal.com/en</a></p>
-										</div>
-									</div>
-								</li>
-							</ul>
+			<div class="col-sm-10 col-xs-10 fullscreen">
+				<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+					<div class="<?php print $container_class; ?>">
+						<div class="navbar-header">
 						</div>
 					</div>
+
+					<div class="navbar-collapse">
+						<div class="container-fluid navbar-container">
+							<nav role="navigation">
+								<ul class="menu nav navbar-nav">
+									<li class="first leaf">
+										<a class="btn-disabled disabled" href="#">&nbsp;</a>
+									</li>
+								</nav>
+							</div>
+						</div>
+						<div class="section-shadow-menu">
+						</div>
+				</header>
+
+				<div id="name-and-slogan">
+					<?php if (!empty($site_name)): ?>
+						<h1 id="site-name">
+							<div title="<?php print t('Home'); ?>" rel="home">
+								<span>
+									<?php print $site_name; ?>
+								</span>
+							</div>
+						</h1>
+					<?php endif; ?>
+
+					<?php if (!empty($site_slogan)): ?>
+						<div id="site-slogan"><?php print $site_slogan; ?></div>
+					<?php endif; ?>
 				</div>
-			 </div>
+			</div>
+		</div>
 
-			<div class="row wavelower row-eq-height">
-  			<div class="col-sm-9 col-xs-0 fullscreen">
-  				<div class="bottom-gap">
-  				</div>
-  			</div>
+		<?php if (!empty($header)): ?>
+			<div id="header-region">
+				<?php print $header; ?>
+			</div>
+		<?php endif; ?>
 
-  			<div class="col-sm-3 col-xs-12 fullscreen">
+		<div class="preface">
+			<div class= "flex_gradient front__flex-margin">
+				<div class="flex-container">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img class="img-responsive" src="/files/fields/field_flex_image/seal-watermark-product.png">
+								<div class="caption-container flex-item-caption">
+									<div class="flex-header">
+										<p>Redirecting.. <span id="counter">3</span></p>
+									</div>
+									<div class="flex-caption">
+										<p><span id="replace">You will now be redirected if your browser will allow it</span> <br /> <a class="display-none white-text" id="ext-link" href="https://www.aesseal.com/en" rel="nofollow">https://www.aesseal.com/en</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  				<img class="curve-down" src = "/sites/all/themes/aesbs337/images/logos/wave-lower.svg" alt ="curve-down"></img>
-
-         <div class="socialmedia text-center">
-           <ul>
-             <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"></a></li>
-             <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"></a></li>
-             <li> <a href="https://www.aesseal.com/en/contact-us" target="_self" title="Contact Us"></a></li>
-             <li> <a href="https://www.aesseal.com/en/locations" target="_self" title="Browse all Locations"></a></li>
-             <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
-           </ul>
-         </div>
+		<div class="row wavelower row-eq-height">
+  		<div class="col-sm-9 col-xs-0 fullscreen">
+  			<div class="bottom-gap">
   			</div>
   		</div>
+
+  		<div class="col-sm-3 col-xs-12 fullscreen">
+  			<img class="curve-down" src = "/sites/all/themes/aesbs337/images/logos/wave-lower.svg" alt ="curve-down"></img>
+        <div class="socialmedia text-center">
+          <ul>
+            <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"></a></li>
+            <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"></a></li>
+            <li> <a href="https://www.aesseal.com/en/contact-us" target="_self" title="Contact Us"></a></li>
+            <li> <a href="https://www.aesseal.com/en/locations" target="_self" title="Browse all Locations"></a></li>
+            <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
+          </ul>
+        </div>
+  		</div>
+  	</div>
 	</div>
 </div>
 
