@@ -1,5 +1,5 @@
-name = aesinternational
-description = International sub-sub theme
+name = redirect
+description = Redirect Sub-theme
 core = 7.x
 base theme = aesbs337
 
@@ -34,4 +34,3 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/int-style.css
-stylesheets[print][]= css/print.css
