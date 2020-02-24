@@ -179,30 +179,26 @@
 
 <div class="main-container <?php print $container_class; ?>">
   <div class="container-fluid">
-	<div class="row">
-
-		<div class="tablet-fix">
-			<section id="main-content" class="col-sm-12">
-
-				<div class="clearfix">
-				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-					<?php if (!empty($tabs)): ?>
-							<?php print render($tabs); ?>
-					<?php endif; ?>
-				</div>
-				</div>
-
-				<?php print render($page['content']); ?>
-
-		</section>
+		<div class="row">
+			<div class="tablet-fix">
+				<section id="main-content" class="col-sm-12">
+					<div class="clearfix">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+							<?php if (!empty($tabs)): ?>
+								<?php print render($tabs); ?>
+							<?php endif; ?>
+						</div>
+					</div>
+					<?php print render($page['content']); ?>
+				</section>
+			</div>
+		</div>
 	</div>
 </div>
-</div>
-</div>
 
 
-			<div id="footer-wrapper">
-	      <div id="footer">
-	       <?php if (!empty($footer)): print $footer; endif; ?>
-	      </div>
-	    </div>
+<div id="footer-wrapper">
+	<div id="footer">
+	 <?php if (!empty($footer)): print $footer; endif; ?>
+	</div>
+</div>
