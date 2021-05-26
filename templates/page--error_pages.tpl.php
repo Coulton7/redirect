@@ -110,22 +110,6 @@
 						</div>
 					</header>
 
-					<div id="name-and-slogan">
-						<?php if (!empty($site_name)): ?>
-							<h1 id="site-name">
-								<div title="<?php print t('Home'); ?>" rel="home">
-									<span>
-										<?php print $site_name; ?>
-									</span>
-								</div>
-							</h1>
-						<?php endif; ?>
-
-						<?php if (!empty($site_slogan)): ?>
-							<div id="site-slogan">
-								<?php print $site_slogan; ?>
-							</div>
-						<?php endif; ?>
 					</div>
 				</div>
 			</div>
