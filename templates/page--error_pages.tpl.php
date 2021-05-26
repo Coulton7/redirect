@@ -73,11 +73,9 @@
  * @ingroup templates
  */
 ?>
-<meta http-equiv="refresh" content="3;url=https://www.aesseal.com"/>
 <link rel="stylesheet" href="/sites/all/libraries/flexslider/flexslider.css" type="text/css">
 <script src="/sites/all/libraries/flexslider/jquery.flexslider-min.js"></script>
 <script src="/sites/all/themes/aesinternational/js/slider.js"></script>
-<script src="/sites/all/themes/aesbs337/js/maintenance-counter.js"></script>
 
 <div class="container-fluid bannercontainer">
 	<div class="row bannerimage">
