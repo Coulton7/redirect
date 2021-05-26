@@ -136,13 +136,6 @@
 									<div class="container-fluid">
 										<div class="row">
 											<?php if(!empty($breadcrumb)): print $breadcrumb; endif?>
-											<div class="breadcrumb-sitemap">
-												<li>
-													<a href="/sitemap">
-														<i class="fas fa-sitemap"></i>
-													</a>
-												</li>
-											</div>
 										</div>
 									</div>
 								</div>
