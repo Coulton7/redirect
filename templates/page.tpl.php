@@ -157,14 +157,42 @@
 			</div>
 		<?php endif; ?>
 
-		<?php if ($page['preface']): ?>
-		<div class="preface">
-			<div class= "flex_gradient">
-				<?php print render($page['preface']);?>
+		<div class="preface front__flex-margin">
+			<div class= "flex-gradient">
+				<div class="row">
+					<div class="col-sm-10 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+						<div class="flex-header">
+							<?php if(!empty($title)): ?>
+								<h1 class="page-header" id="page-main-heading"><?php print strstr($title, "®") ? str_replace("®", "<sup?®</sup>", $title) : $title; ?></h1>
+							<?php endif ?>
+						</div>
+					</div>
+					<div class="col-lg-7 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-8">
+						<div class="flex-caption">
+							<div class="breadcrumb-wrap">
+								<div class="container-fluid">
+									<div class="row">
+										<?php if(!empty($breadcrumb)): print $breadcrumb; endif?>
+										<div class="breadcrumb-sitemap">
+											<li>
+												<a href="/sitemap">
+													<i class="fas fa-sitemap"></i>
+												</a>
+											</li>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<?php if ($page['preface']): ?>
+				<?php print render($page['preface']);?>
 			</div>
 		</div>
-					<?php endif; ?>
+		<?php endif; ?>
 
 
 		<?php if ($page['wavelower']): ?>
@@ -210,21 +238,10 @@
 					else if (empty($page['sidebar_first']) || empty($page['sidebar_second'])) { print 'col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2'; }
 					else { print 'col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2'; } ?>">
 
-          <?php if (!empty($title)): ?>
-  					<h1 class="page-header" id="page-main-heading"><?php print $title; ?></h1>
-					<?php endif; ?>
-
 			<div class="<?php if (empty($page['sidebar_first']) && empty($page['sidebar_second'])) { print 'col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2'; }
 														else if (empty($page['sidebar_first']) || empty($page['sidebar_second'])) { print 'col-sm-12'; }
 														else { print 'col-sm-12'; }
 											?>">
-          <div class="breadcrumb-wrap">
-			  <div class="container-fluid">
-				<div class="row">
-                  <?php if (!empty($breadcrumb)): print t("You are here") . $breadcrumb; endif;?> <!--New breadcrumb location -->
-				</div>
-              </div>
-          </div>
           </div>
 
 		<div class="tablet-fix">
@@ -311,9 +328,7 @@
 					else { print 'col-sm-4 col-md-6'; } ?>">
 
 				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-					<div class="iceberg-cta-upper"></div>
 					<?php print render($page['postscript_mid']);?>
-					<div class="iceberg-cta-lower"></div>
 				</div>
 
 			</section>
@@ -327,13 +342,17 @@
 		</div>
 	</div>
 
-			<?php if (!empty($page['postscript'])): ?>
-				<div class="postscript">
-					<div class="section">
-						<?php print render($page['postscript']); ?>
+	<?php if (!empty($page['footer_banner'])): ?>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+					<div class="footer_banner">
+						<?php print render($page['footer_banner']); ?>
 					</div>
 				</div>
-			<?php endif; ?>
+			</div>
+		</div>
+	<?php endif; ?>
 
 			<footer>
 				<?php if (!empty($page['footer'])): ?>
