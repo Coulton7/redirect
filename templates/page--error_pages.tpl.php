@@ -111,54 +111,57 @@
 						</div>
 						<div class="section-shadow-menu">
 						</div>
-				</header>
+					</header>
 
-				<div id="name-and-slogan">
-					<?php if (!empty($site_name)): ?>
-						<h1 id="site-name">
-							<div title="<?php print t('Home'); ?>" rel="home">
-								<span>
-									<?php print $site_name; ?>
-								</span>
+					<div id="name-and-slogan">
+						<?php if (!empty($site_name)): ?>
+							<h1 id="site-name">
+								<div title="<?php print t('Home'); ?>" rel="home">
+									<span>
+										<?php print $site_name; ?>
+									</span>
+								</div>
+							</h1>
+						<?php endif; ?>
+
+						<?php if (!empty($site_slogan)): ?>
+							<div id="site-slogan">
+								<?php print $site_slogan; ?>
 							</div>
-						</h1>
-					<?php endif; ?>
-
-					<?php if (!empty($site_slogan)): ?>
-						<div id="site-slogan"><?php print $site_slogan; ?></div>
-					<?php endif; ?>
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<?php if (!empty($header)): ?>
-			<div id="header-region">
-				<?php print $header; ?>
-			</div>
-		<?php endif; ?>
+			<?php if (!empty($header)): ?>
+				<div id="header-region">
+					<?php print $header; ?>
+				</div>
+			<?php endif; ?>
 
-		<div class="preface front__flex-margin">
-			<div class= "flex-gradient">
-				<div class="row">
-					<div class="col-sm-10 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-						<div class="flex-header">
-							<?php if(!empty($title)): ?>
-								<h1 class="page-header" id="page-main-heading"><?php print strstr($title, "®") ? str_replace("®", "<sup?®</sup>", $title) : $title; ?></h1>
-							<?php endif ?>
+			<div class="preface front__flex-margin">
+				<div class= "flex-gradient">
+					<div class="row">
+						<div class="col-sm-10 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+							<div class="flex-header">
+								<?php if(!empty($title)): ?>
+									<h1 class="page-header" id="page-main-heading"><?php print strstr($title, "®") ? str_replace("®", "<sup?®</sup>", $title) : $title; ?></h1>
+								<?php endif ?>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-7 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-8">
-						<div class="flex-caption">
-							<div class="breadcrumb-wrap">
-								<div class="container-fluid">
-									<div class="row">
-										<?php if(!empty($breadcrumb)): print $breadcrumb; endif?>
-										<div class="breadcrumb-sitemap">
-											<li>
-												<a href="/sitemap">
-													<i class="fas fa-sitemap"></i>
-												</a>
-											</li>
+						<div class="col-lg-7 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-8">
+							<div class="flex-caption">
+								<div class="breadcrumb-wrap">
+									<div class="container-fluid">
+										<div class="row">
+											<?php if(!empty($breadcrumb)): print $breadcrumb; endif?>
+											<div class="breadcrumb-sitemap">
+												<li>
+													<a href="/sitemap">
+														<i class="fas fa-sitemap"></i>
+													</a>
+												</li>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -166,34 +169,32 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<?php if ($page['preface']): ?>
-				<?php print render($page['preface']);?>
+				<?php if ($page['preface']): ?>
+					<?php print render($page['preface']);?>
+				</div>
 			</div>
-		</div>
-		<?php endif; ?>
+				<?php endif; ?>
 
-		<div class="row wavelower row-eq-height">
-  		<div class="col-sm-9 col-xs-0 fullscreen">
-  			<div class="bottom-gap">
+			<div class="row wavelower row-eq-height">
+  			<div class="col-sm-9 col-xs-0 fullscreen">
+  				<div class="bottom-gap">
+  				</div>
   			</div>
-  		</div>
 
-  		<div class="col-sm-3 col-xs-12 fullscreen">
-  			<img class="curve-down" src = "/sites/all/themes/aesbs337/images/logos/wave-lower.svg" alt ="curve-down"></img>
-        <div class="socialmedia text-center">
-          <ul>
-            <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"></a></li>
-            <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"></a></li>
-            <li> <a href="https://www.aesseal.com/en/contact-us" target="_self" title="Contact Us"></a></li>
-            <li> <a href="https://www.aesseal.com/en/locations" target="_self" title="Browse all Locations"></a></li>
-            <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
-          </ul>
-        </div>
-  		</div>
-  	</div>
-	</div>
+  			<div class="col-sm-3 col-xs-12 fullscreen">
+  				<img class="curve-down" src = "/sites/all/themes/aesbs337/images/logos/wave-lower.svg" alt ="curve-down"></img>
+		      <div class="socialmedia text-center">
+		        <ul>
+		          <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"></a></li>
+		          <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"></a></li>
+		          <li> <a href="https://www.aesseal.com/en/contact-us" target="_self" title="Contact Us"></a></li>
+		          <li> <a href="https://www.aesseal.com/en/locations" target="_self" title="Browse all Locations"></a></li>
+		          <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
+		        </ul>
+		      </div>
+		  	</div>
+		  </div>
 </div>
 
 <div class="main-container <?php print $container_class; ?>">
