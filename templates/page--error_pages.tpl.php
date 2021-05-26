@@ -164,7 +164,7 @@
 		          <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"></a></li>
 		          <li> <a href="https://www.aesseal.com/en/contact-us" target="_self" title="Contact Us"></a></li>
 		          <li> <a href="https://www.aesseal.com/en/locations" target="_self" title="Browse all Locations"></a></li>
-		          <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
+		          <li> <a href="https://www.aesseal.com/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View Global Headquarters"> </a></li>
 		        </ul>
 		      </div>
 		  	</div>
