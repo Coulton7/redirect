@@ -79,7 +79,7 @@
 		<div class="row waveupper row-eq-height">
 			<div class="col-sm-2 col-xs-2 fullscreen">
 				<div class="wavelogo">
-					<img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/logo.svg" alt ="logo"></img>
+					<img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/AES-logo21.svg" alt ="logo"></img>
 				</div>
 				<img class= "uppercurve" src="/sites/all/themes/aesbs337/images/logos/wave-upper.svg" alt ="uppercurve"></img>
 				 <?php if ($logo): ?>

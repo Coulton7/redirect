@@ -84,7 +84,7 @@
 			<div class="col-sm-2 col-xs-2 fullscreen">
 				<a title="<?php print t('Home'); ?>" class="logo-link" href="<?php print $front_page; ?>">
 					<div class="wavelogo">
-						<img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/logo.svg" alt ="logo"></img>
+						<img class="wavelogo" src="/sites/all/themes/aesbs337/images/logos/AES-logo21.svg" alt ="logo"></img>
 					</div>
 				</a>
 				<img class= "uppercurve" src="/sites/all/themes/aesbs337/images/logos/wave-upper.svg" alt ="uppercurve"></img>
